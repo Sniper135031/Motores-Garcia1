@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("img/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* ---------- MENÚ ---------- */
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(22,38,61,.90);
+    padding: 20px 50px;
+}
+
+.logo{
+    color: #f7b731;
+    font-size: 30px;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.menu ul li a:hover,
+.activo{
+    color: #f7b731;
+}
+
+/* ---------- BANNER ---------- */
+
+.banner{
+    text-align: center;
+    padding: 80px 20px;
+    background: rgba(0,0,0,.45);
+}
+
+.banner h1{
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.banner p{
+    font-size: 22px;
+}
+
+/* ---------- TARJETAS ---------- */
+
+.contenedor{
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 30px;
+}
+
+.tarjeta{
+    background: rgba(255,255,255,.95);
+    color: black;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    transition: .4s;
+    box-shadow: 0 0 15px rgba(0,0,0,.4);
+}
+
+.tarjeta:hover{
+    transform: translateY(-10px) scale(1.03);
+}
+
+.tarjeta img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.tarjeta h2{
+    margin: 20px 0;
+    color: #16263d;
+}
+
+.tarjeta p{
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+.tarjeta h3{
+    margin: 20px;
+    color: #d35400;
+}
+
+.tarjeta button{
+    margin-bottom: 25px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background: #f7b731;
+    color: black;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.tarjeta button:hover{
+    background: #16263d;
+    color: white;
+}
+
+/* ---------- BENEFICIOS ---------- */
+
+.beneficios{
+    background: rgba(22,38,61,.90);
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.beneficios h2{
+    margin-bottom: 40px;
+    font-size: 35px;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 25px;
+}
+
+.caja{
+    background: rgba(255,255,255,.12);
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.caja h3{
+    color: #f7b731;
+    margin-bottom: 15px;
+}
+
+/* ---------- ESTADÍSTICAS ---------- */
+
+.estadisticas{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 60px;
+    background: rgba(0,0,0,.55);
+    text-align: center;
+}
+
+.estadisticas h1{
+    font-size: 50px;
+    color: #f7b731;
+}
+
+/* ---------- OPINIONES ---------- */
+
+.opiniones{
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.opiniones h2{
+    margin-bottom: 30px;
+}
+
+.comentario{
+    width: 80%;
+    margin: 20px auto;
+    background: rgba(255,255,255,.90);
+    color: black;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer{
+    background: #16263d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer p{
+    margin: 8px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media(max-width:768px){
+
+    .menu{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner h1{
+        font-size: 40px;
+    }
+
+    .estadisticas{
+        gap: 25px;
+    }
+
+}

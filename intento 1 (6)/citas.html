@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar cita - Motores Garcia</title>
+    <link rel="stylesheet" href="citas.css">
+</head>
+
+<body>
+ <nav>
+                <a href="inicio.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="citas.html">Agendar una Cita</a>
+                <a href="index.html" class="cerrar">Cerrar sesion</a>
+            </nav>
+<div class="contenedor-cita">
+
+    <h1>Agendar cita</h1>
+
+    <form id="formCita" action="citas.php" method="POST">
+
+        <label>Nombre del cliente:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label>Vehículo:</label>
+        <input type="text" id="vehiculo" name="vehiculo" required>
+
+        <label>Servicio:</label>
+        <select id="servicio" name="servicio">
+            <option>Cambio de aceite</option>
+            <option>Revisión de motor</option>
+            <option>Frenos</option>
+            <option>Mantenimiento general</option>
+        </select>
+
+        <label>Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required>
+<div class="diagnostico">
+
+    <h2>🔍 Diagnóstico previo</h2>
+
+    <p>Selecciona el problema de tu vehículo:</p>
+
+    <select id="problema" name="problema">
+
+        <option value="motor">
+            No enciende / problemas de motor
+        </option>
+
+        <option value="ruido">
+            Hace ruidos extraños
+        </option>
+
+        <option value="calentamiento">
+            Se calienta demasiado
+        </option>
+
+        <option value="frenos">
+            Problemas de frenos
+        </option>
+
+        <option value="aceite">
+            Necesita mantenimiento
+        </option>
+
+    </select>
+
+    <button type="button" onclick="diagnosticar()">
+         Obtener recomendación
+    </button>
+
+
+    <div id="recomendacion"></div>
+
+</div>
+        <button type="submit">
+            Agendar cita
+        </button>
+
+    </form>
+
+
+    <div id="resultado"></div>
+
+</div>
+
+
+<script src="js/citas.js"></script>
+
+</body>
+</html>

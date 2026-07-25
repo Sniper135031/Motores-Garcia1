@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, sans-serif;
+
+    background-image: url("../img/fondo.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+
+    margin: 0;
+    padding: 0;
+
+}
+.contenedor-cita {
+
+    width: 90%;
+    max-width: 500px;
+
+    margin: 50px auto;
+
+    background: rgba(255,255,255,0.9);
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+
+}
+
+h1 {
+
+    text-align: center;
+    color: #222;
+
+}
+
+
+label {
+
+    display: block;
+    margin-top: 15px;
+
+    font-weight: bold;
+
+}
+
+
+input, select {
+
+    width: 100%;
+    padding: 12px;
+
+    margin-top: 5px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    box-sizing: border-box;
+
+}
+
+
+button {
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 12px;
+
+    background: #ff0000;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+
+button:hover {
+
+    background: #990000;
+
+}
+
+
+.confirmacion {
+
+    margin-top: 25px;
+
+    padding: 20px;
+
+    background: #e7ffe7;
+
+    border-left: 5px solid green;
+
+    border-radius: 10px;
+
+}
+
+
+.confirmacion h2 {
+
+    color: green;
+
+}
+.diagnostico {
+
+    margin-bottom: 25px;
+    padding: 20px;
+
+    background: rgba(255,255,255,0.9);
+
+    border-radius: 15px;
+
+}
+
+
+.diagnostico h2 {
+
+    text-align: center;
+
+    color: #d00000;
+
+}
+
+
+#recomendacion {
+
+    margin-top: 15px;
+
+}
+/* Modo accesible para daltonismo */
+
+.modo-daltonico {
+
+    filter: contrast(1.3);
+
+}
+
+
+.modo-daltonico button {
+
+    background: #0057b7;
+    color: white;
+
+}
+
+
+.modo-daltonico input,
+.modo-daltonico select {
+
+    border: 2px solid #0057b7;
+
+}
+.modo-daltonico {
+
+    filter: contrast(1.3);
+
+}
+
+
+.modo-daltonico button {
+
+    background: #0057b7;
+    color:white;
+
+}
+nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    background:#16263d;
+    padding:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:3s;
+}
+
+nav a:hover{
+    color:#f7b731;
+}
+
+ body{
+            font-family: Arial, sans-serif;
+            background-image: url("img/fondo.jpg");
+        }

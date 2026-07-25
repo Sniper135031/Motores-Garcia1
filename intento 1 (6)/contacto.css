@@ -1,0 +1,253 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #1375b6;
+    color: #000000;
+}
+
+header{
+    background:#162a46;
+    padding:15px 40px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h1{
+    color:white;
+    font-size:30px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul {
+    margin-left:25px;
+}
+
+nav ul a{
+    color:rgb(0, 0, 0);
+    text-decoration:none;
+    font-weight:bold;
+    transition:3s;
+}
+
+vav ul a:hover{
+    color:#f7b731;
+}
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    background:white;
+}
+
+.hero h2{
+    font-size:40px;
+    color:#16263d;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    color:#666;
+}
+
+.informacion{
+    width:90%;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repead(auto-fit,minmax(250px,1fr));
+    gap:25;
+}
+
+.tarjeta{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,.15);
+    text-align:center;
+    transition:3s;
+}
+
+.tarjeta:hover{
+    transform:translateY(-8px);
+}
+
+.tarjet h3{
+    color:#f7b731;
+    margin-bottom:15px;
+}
+
+.tarjeta p{
+    margin:8px 0;
+}
+
+.mapa{
+    text-align:center;
+    margin:50px 0;
+}
+
+.maoa h2{
+    color:#16263d;
+    margin-bottom:20px;
+}
+
+.mapa img{
+    width:80%;
+    max-width: 800px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,.2);
+}
+
+.redes{
+    text-align:center;
+    margin:50px 0;
+}
+
+.redes h2{
+    color:#16263d;
+    margin-bottom:20px;
+}
+
+.botones button{
+    padding:15px 25px;
+    margin:10px;
+    border:none;
+    border-radius:10px;
+    background:#f7b731;
+    color:rgb(78, 78, 78);
+    cursor:pointer;
+    font-size:16px;
+    transition:3s;
+}
+
+.botones button:hover{
+    background:#16263d;
+}
+
+.mensaje{
+    width:90%;
+    margin:auto;
+    text-align:center;
+    padding:40px;
+}
+
+.mensaje h2{
+    color:#ffee00;
+    margin-bottom:15px;
+}
+
+.mensaje p{
+    color:#fffb00;
+    font-size:18px;
+}
+
+footer{
+    background:#16263d;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+header{
+    position:relative;
+    z-index:9999;
+}
+
+nav{
+    position:relative;
+    z-index:9999;
+}
+
+nav a{
+    position:relative;
+    z-index:9999;
+}
+
+.hero{
+    margin-top:30px;
+}
+
+nav{
+    background:#33566d;
+    padding:15px 30px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:120px;
+}
+
+nav ul a{
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    transition:3s;
+}
+
+nav ul a{
+    color:#f7b731
+}
+
+nav ul a:visited{
+    color:rgb(255, 255, 255);
+}
+
+nav ul a:link{
+    color:rgb(255, 255, 255);
+}
+
+body{
+            font-family: Arial, sans-serif;
+            background-image: url("img/fondo.jpg");
+        }
+
+        .red-social {
+    color: rgb(255, 238, 0);
+    text-decoration: none;
+}
+
+.red-social:visited {
+    color: rgba(0, 0, 0, 0);
+}
+
+.red-social:hover {
+    color: #ccc;
+}
+
+.red-social {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.red-social:visited {
+    color: white;
+}
+
+.red-social:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
