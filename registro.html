@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Registro Motores Garcia</title>
+
+<style>
+
+body{
+    font-family:Arial,sans-serif;
+    background-image:url("img/fondo.jpg");
+    background-size:cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.registro{
+    background:white;
+    padding:30px;
+    width:350px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,.3);
+    text-align:center;
+}
+
+.logo{
+    width:80px;
+}
+
+input{
+    width:90%;
+    padding:12px;
+    margin:10px 0;
+}
+
+button{
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#333;
+    color:white;
+}
+
+a{
+    display:block;
+    margin-top:15px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="registro">
+
+<img src="img/logo.jpg" class="logo">
+
+<h1> Motores Garcia </h1>
+
+<h3>Registro de Usuario</h3>
+
+<form action="registro.php" method="POST">
+
+<input 
+type="text"
+name="usuario"
+placeholder="Usuario"
+required>
+
+<input 
+type="email"
+name="correo"
+placeholder="Correo electrónico"
+required>
+
+<input 
+type="password"
+name="contraseña"
+placeholder="Contraseña"
+required>
+
+<button type="submit">
+Registrarse
+</button>
+
+</form>
+
+
+<a href="index.html">
+Volver al inicio
+</a>
+
+</div>
+
+</body>
+
+</html>
